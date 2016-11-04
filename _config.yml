@@ -11,7 +11,7 @@ email: borisschapira@gmail.com
 description: "an example of how you can use Jekyll to manage different training programs"
 baseurl: "" # the subpath of your site, e.g. /blog
 timezone: Europe/Paris
-incremental: true
+incremental: false
 profile: true
 encoding: utf-8
 author: Boris Schapira
