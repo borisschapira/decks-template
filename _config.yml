@@ -9,15 +9,24 @@
 title: 'Decks Template'
 email: borisschapira@gmail.com
 description: "an example of how you can use Jekyll to manage different training programs"
-baseurl: "/decks-template" # the subpath of your site, e.g. /blog
+baseurl: "" # the subpath of your site, e.g. /blog
 timezone: Europe/Paris
 incremental: true
 profile: true
 encoding: utf-8
 author: Boris Schapira
 
+livereload: true    # You no longer need to include --livereload
+reload_port: 5678    # If you don't want to use the default port
+
+formation:
+  assets:
+    url: /assets/images/formation/
+
 # Build settings
 markdown: kramdown
+kramdown:
+  hard_wrap: true
 
 # Exclusions
 exclude:
