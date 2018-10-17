@@ -28,23 +28,27 @@ a.logo {
   z-index: 1000;
 }
 
-img.logo {
+img.logo,
+svg.logo {
   position: fixed;
   top: 10px;
   right: 20px;
   width: 20vh;
 }
 
-img.print-logo {
+img.print-logo
+svg.print-logo {
   display: none;
 }
 
 .print-pdf {
-  img.logo {
+	img.logo,
+	svg.logo {
     display: none;
   }
 
-  img.print-logo {
+	img.print-logo,
+	svg.print-logo {
     display: block;
     float: right;
     width: 20%;

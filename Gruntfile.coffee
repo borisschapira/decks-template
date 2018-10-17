@@ -186,6 +186,7 @@ module.exports = (grunt) ->
                 do (chapter) ->
                     deckTemplate = grunt.file.read 'templates/_deck.html'
                     sectionTemplate = grunt.file.read 'templates/_section.html'
+                    logo = grunt.file.read 'images/logo.svg'
 
                     if grunt.file.exists 'slides/' + chapter + '/list.json'
                         slides = grunt.file.readJSON 'slides/' + chapter + '/list.json'
@@ -203,6 +204,7 @@ module.exports = (grunt) ->
                             return f
 
                     html = grunt.template.process deckTemplate, data:
+                        logo: logo
                         slides:
                             slides
                         section: (slide) ->
