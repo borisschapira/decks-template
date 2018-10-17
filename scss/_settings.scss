@@ -1,19 +1,22 @@
-$cleverGold: #c8a151 !default;
-$cleverGarden: #667d18 !default;
-$cleverForge: #007eb1 !default;
-$cleverPresence: #c74917 !default;
-$editorMainColor: $cleverGold !default;
+$borisPink: #90084c !default;
+$editorMainColor: $borisPink !default;
 
 // Override theme settings ---------------------
-$headingMargin: 40px 0 40px 0 !important !default;
-$mainFont: Georgia, "Times New Roman", Times, serif !default;
+$headingMargin: 10px 0 40px 0 !important !default;
+$mainFont: 'Karla', sans-serif !default;
+$mainFontSize: 1rem !default;
+$fontSizeRoot: 32px !default;
 $mainColor: #000 !default;
-$headingFont: Arial, Helvetica, sans-serif !default;
+$headingFont: 'Rubik', sans-serif !default;
 $headingColor: #000 !default;
 $headingTextShadow: none !default;
 $headingTextTransform: none !default;
 $backgroundColor: #fff !default;
-$linkColor: $cleverGold !default;
+$linkColor: $borisPink !default;
 $linkColorHover: lighten($linkColor, 20%) !default;
 $selectionBackgroundColor: rgba(0, 0, 0, .99) !default;
-$progressBarColor: $cleverForge !default;
+$progressBarColor: $borisPink !default;
+$heading1Size: 3.77rem !default;
+$heading2Size: 2.11rem !default;
+$heading3Size: 1.55rem !default;
+$heading4Size: 1.00rem !default;
