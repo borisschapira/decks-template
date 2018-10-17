@@ -79,7 +79,6 @@
 <script type="text/javascript" src="bower_components/reveal.js/lib/js/head.min.js"></script>
 <script type="text/javascript" src="bower_components/reveal.js/js/reveal.js"></script>
 
-
 <script type="text/javascript">
 	/*jslint browser: true*/
 	/*global Reveal, hljs*/
@@ -157,12 +156,17 @@
 			}
 		]
 	});
-	if (!!window['ga']) {
-		Reveal.addEventListener( 'slidechanged', function( event ) {
-	    // event.previousSlide, event.currentSlide, event.indexh, event.indexv
-	    ga('send', 'event', 'Slide', 'click', event.currentSlide);
-		});
-	}
+</script>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-4257717-10"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'UA-4257717-10');
+  Reveal.addEventListener( 'slidechanged', function( event ) {
+    gtag('event', 'Slide');
+  });
 </script>
 
 </body>
